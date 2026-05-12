@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liverpool FC | Tickets & Hospitality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="tickets.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://resources.premierleague.com/premierleague/badges/t14.png" alt="LFC" width="45" height="45">
+        <span class="brand-text">Liverpool FC</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="fixtures.html">Fixtures</a></li>
+          <li class="nav-item"><a class="nav-link" href="stats.html">Stats</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tickets.html">Tickets</a></li>
+          <li class="nav-item"><a class="nav-link" href="squad.html">Squad</a></li>
+        </ul>
+        <a href="tickets.html" class="btn btn-primary btn-glow">Buy Tickets</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-tickets">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Experience Anfield</h1>
+      <p class="hero-subtitle">Secure your seat for the most electric atmosphere in world football. Official tickets, hospitality packages, and membership access.</p>
+      <a href="#tickets" class="btn btn-primary btn-glow btn-lg">Browse Tickets</a>
+    </div>
+  </section>
+
+  <section class="section" id="tickets">
+    <div class="container">
+      <h2 class="section-title">Available Matches</h2>
+      <div class="ticket-grid">
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <span class="ticket-competition">Premier League</span>
+            <time class="ticket-date">Sat, May 17 • 17:30</time>
+          </div>
+          <div class="ticket-match">
+            <div class="ticket-teams">
+              <span class="ticket-team">Liverpool</span>
+              <span class="ticket-vs">vs</span>
+              <span class="ticket-team">Tottenham</span>
+            </div>
+            <span class="ticket-venue">Anfield</span>
+          </div>
+          <div class="ticket-pricing">
+            <div class="price-tier">
+              <span class="tier-name">Adult</span>
+              <span class="tier-price">from £45</span>
+            </div>
+            <div class="price-tier">
+              <span class="tier-name">Junior</span>
+              <span class="tier-price">from £25</span>
+            </div>
+          </div>
+          <a href="tickets.html" class="btn btn-primary">Select Seats</a>
+        </div>
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <span class="ticket-competition">Premier League</span>
+            <time class="ticket-date">Sat, May 24 • 16:00</time>
+          </div>
+          <div class="ticket-match">
+            <div class="ticket-teams">
+              <span class="ticket-team">Crystal Palace</span>
+              <span class="ticket-vs">vs</span>
+              <span class="ticket-team">Liverpool</span>
+            </div>
+            <span class="ticket-venue">Selhurst Park</span>
+          </div>
+          <div class="ticket-pricing">
+            <div class="price-tier">
+              <span class="tier-name">Adult</span>
+              <span class="tier-price">from £40</span>
+            </div>
+            <div class="price-tier">
+              <span class="tier-name">Junior</span>
+              <span class="tier-price">from £22</span>
+            </div>
+          </div>
+          <a href="tickets.html" class="btn btn-primary">Select Seats</a>
+        </div>
+        <div class="ticket-card sold-out">
+          <div class="sold-badge">Sold Out</div>
+          <div class="ticket-header">
+            <span class="ticket-competition">Champions League</span>
+            <time class="ticket-date">Wed, May 28 • 20:00</time>
+          </div>
+          <div class="ticket-match">
+            <div class="ticket-teams">
+              <span class="ticket-team">Liverpool</span>
+              <span class="ticket-vs">vs</span>
+              <span class="ticket-team">TBD</span>
+            </div>
+            <span class="ticket-venue">Anfield</span>
+          </div>
+          <div class="ticket-pricing">
+            <div class="price-tier">
+              <span class="tier-name">Adult</span>
+              <span class="tier-price">from £65</span>
+            </div>
+          </div>
+          <button class="btn btn-outline-light" disabled>Notify Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hospitality-section">
+    <div class="container">
+      <h2 class="section-title">Hospitality Packages</h2>
+      <div class="hospitality-grid">
+        <div class="hospitality-card">
+          <div class="hospitality-badge">Premium</div>
+          <h3 class="hospitality-title">The Kop Suite</h3>
+          <p class="hospitality-desc">Exclusive pre-match dining, premium seating, and complimentary beverages in the heart of Anfield's famous Kop end.</p>
+          <ul class="hospitality-perks">
+            <li>✓ 3-course pre-match meal</li>
+            <li>✓ Premium bar access</li>
+            <li>✓ Dedicated host</li>
+            <li>✓ Match programme & gift</li>
+          </ul>
+          <div class="hospitality-price">
+            <span class="price-from">from</span>
+            <span class="price-amount">£295</span>
+            <span class="price-per">per person</span>
+          </div>
+          <a href="tickets.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+        <div class="hospitality-card featured">
+          <div class="hospitality-badge gold">Signature</div>
+          <h3 class="hospitality-title">Legends Lounge</h3>
+          <p class="hospitality-desc">The ultimate Anfield experience with meet-and-greet opportunities, luxury dining, and the best views in the stadium.</p>
+          <ul class="hospitality-perks">
+            <li>✓ VIP lounge access</li>
+            <li>✓ Gourmet dining experience</li>
+            <li>✓ Player tunnel view</li>
+            <li>✓ Exclusive merchandise</li>
+            <li>✓ Post-match Q&A</li>
+          </ul>
+          <div class="hospitality-price">
+            <span class="price-from">from</span>
+            <span class="price-amount">£495</span>
+            <span class="price-per">per person</span>
+          </div>
+          <a href="tickets.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+        <div class="hospitality-card">
+          <div class="hospitality-badge">Executive</div>
+          <h3 class="hospitality-title">Centenary Club</h3>
+          <p class="hospitality-desc">Sophisticated hospitality with fine dining, premium seating, and access to the exclusive Centenary Club lounge.</p>
+          <ul class="hospitality-perks">
+            <li>✓ Fine dining restaurant</li>
+            <li>✓ Premium seating</li>
+            <li>✓ Complimentary drinks</li>
+            <li>✓ Dedicated concierge</li>
+          </ul>
+          <div class="hospitality-price">
+            <span class="price-from">from</span>
+            <span class="price-amount">£375</span>
+            <span class="price-per">per person</span>
+          </div>
+          <a href="tickets.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section membership-section">
+    <div class="container">
+      <h2 class="section-title">Official Membership</h2>
+      <p class="section-intro">Become an official member for priority ticket access, exclusive content, and member-only benefits.</p>
+      <div class="membership-grid">
+        <div class="membership-card">
+          <h3 class="membership-title">Red Member</h3>
+          <div class="membership-price">£35<span class="price-period">/year</span></div>
+          <ul class="membership-perks">
+            <li>✓ Priority ticket ballot access</li>
+            <li>✓ Exclusive member news</li>
+            <li>✓ 10% LFC Store discount</li>
+            <li>✓ Digital membership card</li>
+          </ul>
+          <a href="tickets.html" class="btn btn-outline-light">Join Now</a>
+        </div>
+        <div class="membership-card featured">
+          <div class="membership-badge">Most Popular</div>
+          <h3 class="membership-title">Gold Member</h3>
+          <div class="membership-price">£75<span class="price-period">/year</span></div>
+          <ul class="membership-perks">
+            <li>✓ Enhanced ballot priority</li>
+            <li>✓ Exclusive event invites</li>
+            <li>✓ 15% LFC Store discount</li>
+            <li>✓ Birthday gift</li>
+            <li>✓ Member lounge access</li>
+          </ul>
+          <a href="tickets.html" class="btn btn-primary">Join Now</a>
+        </div>
+        <div class="membership-card">
+          <h3 class="membership-title">Junior Member</h3>
+          <div class="membership-price">£20<span class="price-period">/year</span></div>
+          <ul class="membership-perks">
+            <li>✓ Junior ticket ballot access</li>
+            <li>✓ Exclusive junior content</li>
+            <li>✓ 10% LFC Store discount</li>
+            <li>✓ Welcome pack</li>
+          </ul>
+          <a href="tickets.html" class="btn btn-outline-light">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section seating-section">
+    <div class="container">
+      <h2 class="section-title">Anfield Seating Plan</h2>
+      <div class="seating-container">
+        <div class="pitch"></div>
+        <div class="stand kop">
+          <div class="stand-label">The Kop</div>
+          <div class="seating-blocks">
+            <div class="block upper">Upper Tier</div>
+            <div class="block lower">Lower Tier</div>
+          </div>
+        </div>
+        <div class="stand main">
+          <div class="stand-label">Main Stand</div>
+          <div class="seating-blocks">
+            <div class="block upper">Upper</div>
+            <div class="block middle">Middle</div>
+            <div class="block lower">Lower</div>
+          </div>
+        </div>
+        <div class="stand centenary">
+          <div class="stand-label">Centenary Stand</div>
+          <div class="seating-blocks">
+            <div class="block upper">Upper</div>
+            <div class="block lower">Lower</div>
+          </div>
+        </div>
+        <div class="stand anfield-road">
+          <div class="stand-label">Anfield Road End</div>
+          <div class="seating-blocks">
+            <div class="block upper">Upper</div>
+            <div class="block lower">Lower</div>
+          </div>
+        </div>
+      </div>
+      <div class="seating-legend">
+        <div class="legend-item"><span class="legend-color available"></span> Available</div>
+        <div class="legend-item"><span class="legend-color premium"></span> Premium</div>
+        <div class="legend-item"><span class="legend-color sold"></span> Sold Out</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="section-title">Ticketing FAQ</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              How do I buy tickets?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Tickets are sold exclusively through Liverpool FC's official channels. Members receive priority access via ballot. General sales open if tickets remain.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What is the membership ballot?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              A fair system where members apply for tickets. If applications exceed availability, a random ballot selects successful applicants.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Can I resell my ticket?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No. Tickets are personal and non-transferable. Attempting to resell may result in a lifetime ban from Anfield.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              What ID do I need?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Bring the payment card used for purchase and a valid photo ID matching the ticket holder name for collection and entry.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section matchday-section">
+    <div class="container">
+      <h2 class="section-title">Matchday Experience</h2>
+      <div class="matchday-grid">
+        <div class="matchday-card">
+          <div class="matchday-icon">🚌</div>
+          <h4>Travel & Parking</h4>
+          <p>Plan your journey early. Limited parking near Anfield. Use official park & ride services or public transport.</p>
+        </div>
+        <div class="matchday-card">
+          <div class="matchday-icon">🍔</div>
+          <h4>Food & Beverage</h4>
+          <p>Enjoy traditional matchday fare and local specialties at concourse kiosks. Cashless payments only.</p>
+        </div>
+        <div class="matchday-card">
+          <div class="matchday-icon">🛍️</div>
+          <h4>LFC Store</h4>
+          <p>Visit the world's largest football store at Anfield for exclusive matchday merchandise and souvenirs.</p>
+        </div>
+        <div class="matchday-card">
+          <div class="matchday-icon">♿</div>
+          <h4>Accessibility</h4>
+          <p>Anfield is fully accessible. Contact us in advance to arrange wheelchair spaces or assistance services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-title">Club</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About LFC</a></li>
+            <li><a href="about.html">History & Honours</a></li>
+            <li><a href="about.html">Anfield Stadium</a></li>
+            <li><a href="squad.html">Academy</a></li>
+            <li><a href="squad.html">Women's Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="tickets.html">Ticketing Info</a></li>
+            <li><a href="tickets.html">Membership</a></li>
+            <li><a href="about.html">Accessibility</a></li>
+            <li><a href="about.html">Contact Us</a></li>
+            <li><a href="about.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Official</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">LiverpoolFC.com</a></li>
+            <li><a href="fixtures.html">Premier League</a></li>
+            <li><a href="fixtures.html">UEFA</a></li>
+            <li><a href="tickets.html">LFC Store</a></li>
+            <li><a href="about.html">LFC Foundation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Connect</h4>
+          <div class="social-links">
+            <a href="https://instagram.com/liverpoolfc" target="_blank" class="social-link"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="https://youtube.com/liverpoolfc" target="_blank" class="social-link"><i class="bi bi-youtube"></i> YouTube</a>
+            <a href="https://facebook.com/LiverpoolFC" target="_blank" class="social-link"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="https://twitter.com/LFC" target="_blank" class="social-link"><i class="bi bi-twitter-x"></i> X/Twitter</a>
+          </div>
+          <p class="footer-copyright">@Copyright Marvelle Faith Hermanto 2026</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="sponsors">
+          <span class="sponsor">Standard Chartered</span>
+          <span class="sponsor">Nike</span>
+          <span class="sponsor">Expedia</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="tickets.js"></script>
+</body>
+</html>

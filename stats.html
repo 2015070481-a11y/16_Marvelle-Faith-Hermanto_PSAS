@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liverpool FC | Player Statistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="stats.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://resources.premierleague.com/premierleague/badges/t14.png" alt="LFC" width="45" height="45">
+        <span class="brand-text">Liverpool FC</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="fixtures.html">Fixtures</a></li>
+          <li class="nav-item"><a class="nav-link active" href="stats.html">Stats</a></li>
+          <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+          <li class="nav-item"><a class="nav-link" href="squad.html">Squad</a></li>
+        </ul>
+        <a href="tickets.html" class="btn btn-primary btn-glow">Buy Tickets</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-stats">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Player Statistics</h1>
+      <p class="hero-subtitle">2025/26 Season Performance Analytics</p>
+    </div>
+  </section>
+
+  <section class="section stats-dashboard">
+    <div class="container">
+      <div class="stats-filters">
+        <button class="filter-btn active">All Players</button>
+        <button class="filter-btn">Goalkeepers</button>
+        <button class="filter-btn">Defenders</button>
+        <button class="filter-btn">Midfielders</button>
+        <button class="filter-btn">Forwards</button>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card featured">
+          <div class="stat-header">
+            <img src="https://ui-avatars.com/api/?name=Dominik+Szoboszlai&background=C8102E&color=fff&size=128" alt="Szoboszlai">
+            <div>
+              <h3>Dominik Szoboszlai</h3>
+              <span class="stat-subtitle">Player of the Match: 5</span>
+            </div>
+          </div>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="stat-label">Rating</span>
+              <span class="stat-value">7.48</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Goals</span>
+              <span class="stat-value">6</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Assists</span>
+              <span class="stat-value">5</span>
+            </div>
+          </div>
+          <div class="stat-progress">
+            <div class="progress-bar" style="width: 95%"></div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <img src="https://ui-avatars.com/api/?name=Ryan+Gravenberch&background=C8102E&color=fff&size=128" alt="Gravenberch">
+            <div>
+              <h3>Ryan Gravenberch</h3>
+              <span class="stat-subtitle">Player of the Match: 3</span>
+            </div>
+          </div>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="stat-label">Rating</span>
+              <span class="stat-value">7.28</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Goals</span>
+              <span class="stat-value">5</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Assists</span>
+              <span class="stat-value">3</span>
+            </div>
+          </div>
+          <div class="stat-progress">
+            <div class="progress-bar" style="width: 88%"></div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <img src="https://ui-avatars.com/api/?name=Cody+Gakpo&background=C8102E&color=fff&size=128" alt="Gakpo">
+            <div>
+              <h3>Cody Gakpo</h3>
+              <span class="stat-subtitle">Player of the Match: 2</span>
+            </div>
+          </div>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="stat-label">Rating</span>
+              <span class="stat-value">7.23</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Goals</span>
+              <span class="stat-value">7</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Assists</span>
+              <span class="stat-value">5</span>
+            </div>
+          </div>
+          <div class="stat-progress">
+            <div class="progress-bar" style="width: 86%"></div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <img src="https://ui-avatars.com/api/?name=Virgil+van+Dijk&background=C8102E&color=fff&size=128" alt="Van Dijk">
+            <div>
+              <h3>Virgil van Dijk</h3>
+              <span class="stat-subtitle">Player of the Match: 1</span>
+            </div>
+          </div>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="stat-label">Rating</span>
+              <span class="stat-value">7.23</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Goals</span>
+              <span class="stat-value">4</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Clean Sheets</span>
+              <span class="stat-value">12</span>
+            </div>
+          </div>
+          <div class="stat-progress">
+            <div class="progress-bar" style="width: 86%"></div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <img src="https://ui-avatars.com/api/?name=Florian+Wirtz&background=C8102E&color=fff&size=128" alt="Wirtz">
+            <div>
+              <h3>Florian Wirtz</h3>
+              <span class="stat-subtitle">Player of the Match: 3</span>
+            </div>
+          </div>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="stat-label">Rating</span>
+              <span class="stat-value">7.22</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Goals</span>
+              <span class="stat-value">5</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Assists</span>
+              <span class="stat-value">3</span>
+            </div>
+          </div>
+          <div class="stat-progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <img src="https://ui-avatars.com/api/?name=Ibrahima+Konate&background=C8102E&color=fff&size=128" alt="Konate">
+            <div>
+              <h3>Ibrahima Konaté</h3>
+              <span class="stat-subtitle">Player of the Match: 1</span>
+            </div>
+          </div>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="stat-label">Rating</span>
+              <span class="stat-value">7.15</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Goals</span>
+              <span class="stat-value">1</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Aerial Duels</span>
+              <span class="stat-value">202</span>
+            </div>
+          </div>
+          <div class="stat-progress">
+            <div class="progress-bar" style="width: 82%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section rankings-section">
+    <div class="container">
+      <h2 class="section-title">Top Performers</h2>
+      <div class="rankings-table">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Position</th>
+              <th>Apps</th>
+              <th>Goals</th>
+              <th>Assists</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="https://ui-avatars.com/api/?name=Dominik+Szoboszlai&background=C8102E&color=fff&size=40" alt="Szoboszlai"> Dominik Szoboszlai</td>
+              <td>Midfielder</td>
+              <td>51</td>
+              <td>13</td>
+              <td>10</td>
+              <td>7.48</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="https://ui-avatars.com/api/?name=Ryan+Gravenberch&background=C8102E&color=fff&size=40" alt="Gravenberch"> Ryan Gravenberch</td>
+              <td>Midfielder</td>
+              <td>48</td>
+              <td>6</td>
+              <td>6</td>
+              <td>7.28</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="https://ui-avatars.com/api/?name=Cody+Gakpo&background=C8102E&color=fff&size=40" alt="Gakpo"> Cody Gakpo</td>
+              <td>Forward</td>
+              <td>50</td>
+              <td>9</td>
+              <td>6</td>
+              <td>7.23</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="https://ui-avatars.com/api/?name=Virgil+van+Dijk&background=C8102E&color=fff&size=40" alt="Van Dijk"> Virgil van Dijk</td>
+              <td>Defender</td>
+              <td>53</td>
+              <td>4</td>
+              <td>2</td>
+              <td>7.23</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><img src="https://ui-avatars.com/api/?name=Florian+Wirtz&background=C8102E&color=fff&size=40" alt="Wirtz"> Florian Wirtz</td>
+              <td>Midfielder</td>
+              <td>47</td>
+              <td>5</td>
+              <td>3</td>
+              <td>7.22</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><img src="https://ui-avatars.com/api/?name=Ibrahima+Konate&background=C8102E&color=fff&size=40" alt="Konate"> Ibrahima Konaté</td>
+              <td>Defender</td>
+              <td>49</td>
+              <td>1</td>
+              <td>1</td>
+              <td>7.15</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><img src="https://ui-avatars.com/api/?name=Mohamed+Salah&background=C8102E&color=fff&size=40" alt="Salah"> Mohamed Salah</td>
+              <td>Forward</td>
+              <td>39</td>
+              <td>12</td>
+              <td>9</td>
+              <td>7.08</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><img src="https://ui-avatars.com/api/?name=Hugo+Ekitike&background=C8102E&color=fff&size=40" alt="Ekitike"> Hugo Ekitiké</td>
+              <td>Forward</td>
+              <td>45</td>
+              <td>11</td>
+              <td>4</td>
+              <td>7.08</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><img src="https://ui-avatars.com/api/?name=Milos+Kerkez&background=C8102E&color=fff&size=40" alt="Kerkez"> Milos Kerkez</td>
+              <td>Defender</td>
+              <td>46</td>
+              <td>2</td>
+              <td>2</td>
+              <td>6.93</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><img src="https://ui-avatars.com/api/?name=Alexis+Mac+Allister&background=C8102E&color=fff&size=40" alt="Mac Allister"> Alexis Mac Allister</td>
+              <td>Midfielder</td>
+              <td>48</td>
+              <td>4</td>
+              <td>6</td>
+              <td>6.91</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-title">Club</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About LFC</a></li>
+            <li><a href="about.html">History & Honours</a></li>
+            <li><a href="about.html">Anfield Stadium</a></li>
+            <li><a href="squad.html">Academy</a></li>
+            <li><a href="squad.html">Women's Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="tickets.html">Ticketing Info</a></li>
+            <li><a href="tickets.html">Membership</a></li>
+            <li><a href="about.html">Accessibility</a></li>
+            <li><a href="about.html">Contact Us</a></li>
+            <li><a href="about.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Official</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">LiverpoolFC.com</a></li>
+            <li><a href="fixtures.html">Premier League</a></li>
+            <li><a href="fixtures.html">UEFA</a></li>
+            <li><a href="tickets.html">LFC Store</a></li>
+            <li><a href="about.html">LFC Foundation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Connect</h4>
+          <div class="social-links">
+            <a href="https://instagram.com/liverpoolfc" target="_blank" class="social-link"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="https://youtube.com/liverpoolfc" target="_blank" class="social-link"><i class="bi bi-youtube"></i> YouTube</a>
+            <a href="https://facebook.com/LiverpoolFC" target="_blank" class="social-link"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="https://twitter.com/LFC" target="_blank" class="social-link"><i class="bi bi-twitter-x"></i> X/Twitter</a>
+          </div>
+          <p class="footer-copyright">@Copyright Marvelle Faith Hermanto 2026</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="sponsors">
+          <span class="sponsor">Standard Chartered</span>
+          <span class="sponsor">Nike</span>
+          <span class="sponsor">Expedia</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="stats.js"></script>
+</body>
+</html>
