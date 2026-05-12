@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liverpool FC | Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+
+  <section class="registration-page">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="registration-header text-center mb-5">
+            <img src="https://resources.premierleague.com/premierleague/badges/t14.png" alt="LFC" width="80" height="80" class="mb-3">
+            <h1 class="registration-title">Liverpool FC Membership</h1>
+            <p class="registration-subtitle">Join the Reds family and be part of something special</p>
+          </div>
+
+          <div class="registration-card">
+            <form id="registrationForm" class="registration-form">
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="bi bi-person-circle"></i>
+                  Personal Information
+                </h4>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name *</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name *</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number *</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="birthdate" class="form-label">Date of Birth *</label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="country" class="form-label">Country *</label>
+                    <select class="form-select" id="country" name="country" required>
+                      <option value="">Select Country</option>
+                      <option value="indonesia">Indonesia</option>
+                      <option value="uk">United Kingdom</option>
+                      <option value="usa">United States</option>
+                      <option value="australia">Australia</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="bi bi-ticket-perforated"></i>
+                  Membership Type
+                </h4>
+                <div class="membership-options">
+                  <div class="membership-option">
+                    <input type="radio" class="form-check-input" id="redMember" name="membershipType" value="red" required>
+                    <label class="membership-label" for="redMember">
+                      <div class="membership-icon">
+                        <i class="bi bi-shield-fill"></i>
+                      </div>
+                      <div class="membership-info">
+                        <strong>Red Member</strong>
+                        <span>£35/year - Basic membership</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="membership-option">
+                    <input type="radio" class="form-check-input" id="goldMember" name="membershipType" value="gold">
+                    <label class="membership-label" for="goldMember">
+                      <div class="membership-icon">
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="membership-info">
+                        <strong>Gold Member</strong>
+                        <span>£75/year - Enhanced benefits</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="membership-option">
+                    <input type="radio" class="form-check-input" id="juniorMember" name="membershipType" value="junior">
+                    <label class="membership-label" for="juniorMember">
+                      <div class="membership-icon">
+                        <i class="bi bi-emoji-smile-fill"></i>
+                      </div>
+                      <div class="membership-info">
+                        <strong>Junior Member</strong>
+                        <span>£20/year - Under 16</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="bi bi-gift"></i>
+                  Additional Services
+                </h4>
+                <div class="checkbox-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                    <label class="form-check-label" for="newsletter">
+                      Subscribe to LFC newsletter
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="matchday" name="matchday">
+                    <label class="form-check-label" for="matchday">
+                      Matchday ticket notifications
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="merchandise" name="merchandise">
+                    <label class="form-check-label" for="merchandise">
+                      Exclusive merchandise offers (10% off)
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="bi bi-heart"></i>
+                  About Your Support
+                </h4>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="favoritePlayer" class="form-label">Favorite Player</label>
+                    <select class="form-select" id="favoritePlayer" name="favoritePlayer">
+                      <option value="">Select Player</option>
+                      <option value="salah">Mohamed Salah</option>
+                      <option value="vandijk">Virgil van Dijk</option>
+                      <option value="alisson">Alisson Becker</option>
+                      <option value="trent">Trent Alexander-Arnold</option>
+                      <option value="szoboszlai">Dominik Szoboszlai</option>
+                      <option value="gakpo">Cody Gakpo</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="supportSince" class="form-label">Supporting Since</label>
+                    <select class="form-select" id="supportSince" name="supportSince">
+                      <option value="">Select Year</option>
+                      <option value="2020">2020-2024</option>
+                      <option value="2015">2015-2019</option>
+                      <option value="2010">2010-2014</option>
+                      <option value="2005">2005-2009</option>
+                      <option value="older">Before 2005</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="bi bi-shield-check"></i>
+                  Terms & Conditions
+                </h4>
+                <div class="checkbox-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                    <label class="form-check-label" for="terms">
+                      I agree to the Terms and Conditions and Privacy Policy *
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg btn-submit w-100">
+                  <i class="bi bi-check-circle"></i>
+                  Complete Registration
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="about-me-section mt-5">
+            <div class="about-me-card">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center">
+                  <div class="profile-image-container">
+                    <img src="https://ui-avatars.com/api/?name=Marvelle+Faith+Hermanto&background=C8102E&color=fff&size=200" alt="Profile" class="profile-image">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <h3 class="about-me-title">About Me</h3>
+                  <div class="about-me-content">
+                    <p class="lead">Saya menyukai olahraga, terkhususnya sepakbola sejak kelas 3 SD.</p>
+                    <p>Tim pertama yang membuat saya jatuh cinta adalah <strong class="text-lfc">Liverpool FC</strong>.</p>
+                    <p>Kekalahan melawan Real Madrid pada final <strong>UEFA Champions League 2018</strong> membuat saya terbuka akan arti perjuangan sesama tim dan percaya proses akan hal yang belum pasti.</p>
+                    <p>Penungguan itu terbalas dengan <strong>UCL yang diraih pada satu tahun setelah kekalahan tersebut</strong> dan <strong>buka puasa trophy EPL selama 30 tahun</strong> dan terus menambah.</p>
+                    <div class="about-me-footer mt-3">
+                      <span class="badge badge-lfc">YNWA Forever</span>
+                      <span class="badge badge-lfc">LFC Since 2010</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="about.js"></script>
+</body>
+</html>
